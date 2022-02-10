@@ -9,16 +9,21 @@
 /* Begin PBXBuildFile section */
 		3201AB6C27B3CC2700ACEF65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3201AB6B27B3CC2700ACEF65 /* AppDelegate.swift */; };
 		3201AB6E27B3CC2700ACEF65 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3201AB6D27B3CC2700ACEF65 /* SceneDelegate.swift */; };
-		3201AB7027B3CC2700ACEF65 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3201AB6F27B3CC2700ACEF65 /* ViewController.swift */; };
-		3201AB7327B3CC2700ACEF65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3201AB7127B3CC2700ACEF65 /* Main.storyboard */; };
 		3201AB7527B3CC2900ACEF65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3201AB7427B3CC2900ACEF65 /* Assets.xcassets */; };
 		3201AB7827B3CC2900ACEF65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3201AB7627B3CC2900ACEF65 /* LaunchScreen.storyboard */; };
 		3201AB8327B3CC2900ACEF65 /* lagos_github_usersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3201AB8227B3CC2900ACEF65 /* lagos_github_usersTests.swift */; };
 		3201AB8D27B3CC2A00ACEF65 /* lagos_github_usersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3201AB8C27B3CC2A00ACEF65 /* lagos_github_usersUITests.swift */; };
 		3201AB8F27B3CC2A00ACEF65 /* lagos_github_usersUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3201AB8E27B3CC2A00ACEF65 /* lagos_github_usersUITestsLaunchTests.swift */; };
-		6E6BCBB4C890C1EC543CC1DA /* Pods_lagos_github_users.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13BC3CB4BF8868AD5E971A36 /* Pods_lagos_github_users.framework */; };
-		BEE38447D65DBA69D1A4225C /* Pods_lagos_github_users_lagos_github_usersUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E530FE2E645A91C935CB266 /* Pods_lagos_github_users_lagos_github_usersUITests.framework */; };
-		F2DC11ACC2EB5B083E4594F7 /* Pods_lagos_github_usersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC216DD535DCF2673411AD10 /* Pods_lagos_github_usersTests.framework */; };
+		321BC30327B3DEB800740932 /* Requester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321BC30227B3DEB800740932 /* Requester.swift */; };
+		321BC30527B3DF9000740932 /* Responses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321BC30427B3DF9000740932 /* Responses.swift */; };
+		321BC30927B3E5B900740932 /* UsersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321BC30827B3E5B900740932 /* UsersVC.swift */; };
+		321BC30B27B3E60100740932 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321BC30A27B3E60100740932 /* ProfileCell.swift */; };
+		32F0F4FA27B4B9B100C29824 /* InfiniteScrollVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F0F4F927B4B9B100C29824 /* InfiniteScrollVC.swift */; };
+		32F0F4FC27B4C66100C29824 /* UserRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F0F4FB27B4C66100C29824 /* UserRecord.swift */; };
+		32F0F4FE27B4D88D00C29824 /* DataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F0F4FD27B4D88D00C29824 /* DataHelper.swift */; };
+		4794AFD7CE1F3AB42015CEE3 /* Pods_lagos_github_users_lagos_github_usersUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FC034888CB33C79F1DA9D64 /* Pods_lagos_github_users_lagos_github_usersUITests.framework */; };
+		6D7E58D3B266FAA164B968FF /* Pods_lagos_github_usersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78D7EBE76D91AD14022410DC /* Pods_lagos_github_usersTests.framework */; };
+		9CB2F180830C128F39B5254F /* Pods_lagos_github_users.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D9C9B3F21C7C6CC1556360A /* Pods_lagos_github_users.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,13 +44,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		13BC3CB4BF8868AD5E971A36 /* Pods_lagos_github_users.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_lagos_github_users.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2EC33322C6BFA4B580384579 /* Pods-lagos-github-usersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lagos-github-usersTests.release.xcconfig"; path = "Target Support Files/Pods-lagos-github-usersTests/Pods-lagos-github-usersTests.release.xcconfig"; sourceTree = "<group>"; };
+		0355FE92998F5062626E599D /* Pods-lagos-github-users.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lagos-github-users.debug.xcconfig"; path = "Target Support Files/Pods-lagos-github-users/Pods-lagos-github-users.debug.xcconfig"; sourceTree = "<group>"; };
+		2D9C9B3F21C7C6CC1556360A /* Pods_lagos_github_users.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_lagos_github_users.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3201AB6827B3CC2700ACEF65 /* lagos-github-users.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "lagos-github-users.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3201AB6B27B3CC2700ACEF65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3201AB6D27B3CC2700ACEF65 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3201AB6F27B3CC2700ACEF65 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3201AB7227B3CC2700ACEF65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3201AB7427B3CC2900ACEF65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3201AB7727B3CC2900ACEF65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3201AB7927B3CC2900ACEF65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,13 +57,20 @@
 		3201AB8827B3CC2A00ACEF65 /* lagos-github-usersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "lagos-github-usersUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3201AB8C27B3CC2A00ACEF65 /* lagos_github_usersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lagos_github_usersUITests.swift; sourceTree = "<group>"; };
 		3201AB8E27B3CC2A00ACEF65 /* lagos_github_usersUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lagos_github_usersUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		819ADFC6524A699E4860C69B /* Pods-lagos-github-users.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lagos-github-users.release.xcconfig"; path = "Target Support Files/Pods-lagos-github-users/Pods-lagos-github-users.release.xcconfig"; sourceTree = "<group>"; };
-		8E530FE2E645A91C935CB266 /* Pods_lagos_github_users_lagos_github_usersUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_lagos_github_users_lagos_github_usersUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A004C580CFAEDF0E496E5D31 /* Pods-lagos-github-users-lagos-github-usersUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lagos-github-users-lagos-github-usersUITests.release.xcconfig"; path = "Target Support Files/Pods-lagos-github-users-lagos-github-usersUITests/Pods-lagos-github-users-lagos-github-usersUITests.release.xcconfig"; sourceTree = "<group>"; };
-		BB30704DA76A89769745F418 /* Pods-lagos-github-users-lagos-github-usersUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lagos-github-users-lagos-github-usersUITests.debug.xcconfig"; path = "Target Support Files/Pods-lagos-github-users-lagos-github-usersUITests/Pods-lagos-github-users-lagos-github-usersUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		BC216DD535DCF2673411AD10 /* Pods_lagos_github_usersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_lagos_github_usersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C68C46137F1739DDDA653416 /* Pods-lagos-github-usersTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lagos-github-usersTests.debug.xcconfig"; path = "Target Support Files/Pods-lagos-github-usersTests/Pods-lagos-github-usersTests.debug.xcconfig"; sourceTree = "<group>"; };
-		CAC76925B1944E32E3C94F68 /* Pods-lagos-github-users.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lagos-github-users.debug.xcconfig"; path = "Target Support Files/Pods-lagos-github-users/Pods-lagos-github-users.debug.xcconfig"; sourceTree = "<group>"; };
+		321BC30227B3DEB800740932 /* Requester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requester.swift; sourceTree = "<group>"; };
+		321BC30427B3DF9000740932 /* Responses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Responses.swift; sourceTree = "<group>"; };
+		321BC30827B3E5B900740932 /* UsersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersVC.swift; sourceTree = "<group>"; };
+		321BC30A27B3E60100740932 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
+		32F0F4F927B4B9B100C29824 /* InfiniteScrollVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteScrollVC.swift; sourceTree = "<group>"; };
+		32F0F4FB27B4C66100C29824 /* UserRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRecord.swift; sourceTree = "<group>"; };
+		32F0F4FD27B4D88D00C29824 /* DataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHelper.swift; sourceTree = "<group>"; };
+		3FC034888CB33C79F1DA9D64 /* Pods_lagos_github_users_lagos_github_usersUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_lagos_github_users_lagos_github_usersUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C80415FF39B57D0986D68A4 /* Pods-lagos-github-users.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lagos-github-users.release.xcconfig"; path = "Target Support Files/Pods-lagos-github-users/Pods-lagos-github-users.release.xcconfig"; sourceTree = "<group>"; };
+		558355F28B35940C60E2CC96 /* Pods-lagos-github-usersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lagos-github-usersTests.release.xcconfig"; path = "Target Support Files/Pods-lagos-github-usersTests/Pods-lagos-github-usersTests.release.xcconfig"; sourceTree = "<group>"; };
+		659528E0C18A16ACA065B067 /* Pods-lagos-github-users-lagos-github-usersUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lagos-github-users-lagos-github-usersUITests.debug.xcconfig"; path = "Target Support Files/Pods-lagos-github-users-lagos-github-usersUITests/Pods-lagos-github-users-lagos-github-usersUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		70B4E1624876F001C4ECFC56 /* Pods-lagos-github-usersTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lagos-github-usersTests.debug.xcconfig"; path = "Target Support Files/Pods-lagos-github-usersTests/Pods-lagos-github-usersTests.debug.xcconfig"; sourceTree = "<group>"; };
+		78D7EBE76D91AD14022410DC /* Pods_lagos_github_usersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_lagos_github_usersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		985CB27D5A719308015D20B1 /* Pods-lagos-github-users-lagos-github-usersUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lagos-github-users-lagos-github-usersUITests.release.xcconfig"; path = "Target Support Files/Pods-lagos-github-users-lagos-github-usersUITests/Pods-lagos-github-users-lagos-github-usersUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E6BCBB4C890C1EC543CC1DA /* Pods_lagos_github_users.framework in Frameworks */,
+				9CB2F180830C128F39B5254F /* Pods_lagos_github_users.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,7 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2DC11ACC2EB5B083E4594F7 /* Pods_lagos_github_usersTests.framework in Frameworks */,
+				6D7E58D3B266FAA164B968FF /* Pods_lagos_github_usersTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,7 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEE38447D65DBA69D1A4225C /* Pods_lagos_github_users_lagos_github_usersUITests.framework in Frameworks */,
+				4794AFD7CE1F3AB42015CEE3 /* Pods_lagos_github_users_lagos_github_usersUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,7 +109,7 @@
 				3201AB8B27B3CC2A00ACEF65 /* lagos-github-usersUITests */,
 				3201AB6927B3CC2700ACEF65 /* Products */,
 				C997BEBBF9B09381AAB0C4D8 /* Pods */,
-				99EE01145839F673C531DADC /* Frameworks */,
+				345918E7315A8FE749C383AB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,13 +126,10 @@
 		3201AB6A27B3CC2700ACEF65 /* lagos-github-users */ = {
 			isa = PBXGroup;
 			children = (
-				3201AB6B27B3CC2700ACEF65 /* AppDelegate.swift */,
-				3201AB6D27B3CC2700ACEF65 /* SceneDelegate.swift */,
-				3201AB6F27B3CC2700ACEF65 /* ViewController.swift */,
-				3201AB7127B3CC2700ACEF65 /* Main.storyboard */,
-				3201AB7427B3CC2900ACEF65 /* Assets.xcassets */,
-				3201AB7627B3CC2900ACEF65 /* LaunchScreen.storyboard */,
-				3201AB7927B3CC2900ACEF65 /* Info.plist */,
+				321BC30C27B3EEE400740932 /* Resources */,
+				321BC30127B3DCD800740932 /* API */,
+				321BC30027B3DCCF00740932 /* UI */,
+				321BC2FF27B3DCC300740932 /* Persistence */,
 			);
 			path = "lagos-github-users";
 			sourceTree = "<group>";
@@ -144,12 +151,68 @@
 			path = "lagos-github-usersUITests";
 			sourceTree = "<group>";
 		};
-		99EE01145839F673C531DADC /* Frameworks */ = {
+		321BC2FF27B3DCC300740932 /* Persistence */ = {
 			isa = PBXGroup;
 			children = (
-				13BC3CB4BF8868AD5E971A36 /* Pods_lagos_github_users.framework */,
-				8E530FE2E645A91C935CB266 /* Pods_lagos_github_users_lagos_github_usersUITests.framework */,
-				BC216DD535DCF2673411AD10 /* Pods_lagos_github_usersTests.framework */,
+				32F0F4FB27B4C66100C29824 /* UserRecord.swift */,
+				32F0F4FD27B4D88D00C29824 /* DataHelper.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		321BC30027B3DCCF00740932 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				321BC30727B3E58D00740932 /* Views */,
+				321BC30627B3E57F00740932 /* Controllers */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		321BC30127B3DCD800740932 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				321BC30227B3DEB800740932 /* Requester.swift */,
+				321BC30427B3DF9000740932 /* Responses.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		321BC30627B3E57F00740932 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				321BC30827B3E5B900740932 /* UsersVC.swift */,
+				32F0F4F927B4B9B100C29824 /* InfiniteScrollVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		321BC30727B3E58D00740932 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				321BC30A27B3E60100740932 /* ProfileCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		321BC30C27B3EEE400740932 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3201AB7627B3CC2900ACEF65 /* LaunchScreen.storyboard */,
+				3201AB7927B3CC2900ACEF65 /* Info.plist */,
+				3201AB7427B3CC2900ACEF65 /* Assets.xcassets */,
+				3201AB6D27B3CC2700ACEF65 /* SceneDelegate.swift */,
+				3201AB6B27B3CC2700ACEF65 /* AppDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		345918E7315A8FE749C383AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D9C9B3F21C7C6CC1556360A /* Pods_lagos_github_users.framework */,
+				3FC034888CB33C79F1DA9D64 /* Pods_lagos_github_users_lagos_github_usersUITests.framework */,
+				78D7EBE76D91AD14022410DC /* Pods_lagos_github_usersTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -157,14 +220,13 @@
 		C997BEBBF9B09381AAB0C4D8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CAC76925B1944E32E3C94F68 /* Pods-lagos-github-users.debug.xcconfig */,
-				819ADFC6524A699E4860C69B /* Pods-lagos-github-users.release.xcconfig */,
-				BB30704DA76A89769745F418 /* Pods-lagos-github-users-lagos-github-usersUITests.debug.xcconfig */,
-				A004C580CFAEDF0E496E5D31 /* Pods-lagos-github-users-lagos-github-usersUITests.release.xcconfig */,
-				C68C46137F1739DDDA653416 /* Pods-lagos-github-usersTests.debug.xcconfig */,
-				2EC33322C6BFA4B580384579 /* Pods-lagos-github-usersTests.release.xcconfig */,
+				0355FE92998F5062626E599D /* Pods-lagos-github-users.debug.xcconfig */,
+				4C80415FF39B57D0986D68A4 /* Pods-lagos-github-users.release.xcconfig */,
+				659528E0C18A16ACA065B067 /* Pods-lagos-github-users-lagos-github-usersUITests.debug.xcconfig */,
+				985CB27D5A719308015D20B1 /* Pods-lagos-github-users-lagos-github-usersUITests.release.xcconfig */,
+				70B4E1624876F001C4ECFC56 /* Pods-lagos-github-usersTests.debug.xcconfig */,
+				558355F28B35940C60E2CC96 /* Pods-lagos-github-usersTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -175,11 +237,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3201AB9227B3CC2A00ACEF65 /* Build configuration list for PBXNativeTarget "lagos-github-users" */;
 			buildPhases = (
-				D3AEDA84093670FD51FC2318 /* [CP] Check Pods Manifest.lock */,
+				CB8E4424EA8D7B5123C95CF6 /* [CP] Check Pods Manifest.lock */,
 				3201AB6427B3CC2700ACEF65 /* Sources */,
 				3201AB6527B3CC2700ACEF65 /* Frameworks */,
 				3201AB6627B3CC2700ACEF65 /* Resources */,
-				67D0E1AA3C12643F303FA63D /* [CP] Embed Pods Frameworks */,
+				D822FC603FEB0F3F7B103232 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -194,7 +256,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3201AB9527B3CC2A00ACEF65 /* Build configuration list for PBXNativeTarget "lagos-github-usersTests" */;
 			buildPhases = (
-				5143E48628F82B729F4A2547 /* [CP] Check Pods Manifest.lock */,
+				50137C5B503134AB7F39B8FD /* [CP] Check Pods Manifest.lock */,
 				3201AB7A27B3CC2900ACEF65 /* Sources */,
 				3201AB7B27B3CC2900ACEF65 /* Frameworks */,
 				3201AB7C27B3CC2900ACEF65 /* Resources */,
@@ -213,11 +275,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3201AB9827B3CC2A00ACEF65 /* Build configuration list for PBXNativeTarget "lagos-github-usersUITests" */;
 			buildPhases = (
-				68367ABBFA4C1B06F96991E2 /* [CP] Check Pods Manifest.lock */,
+				5A02E3ACD8A2A60C748458FE /* [CP] Check Pods Manifest.lock */,
 				3201AB8427B3CC2A00ACEF65 /* Sources */,
 				3201AB8527B3CC2A00ACEF65 /* Frameworks */,
 				3201AB8627B3CC2A00ACEF65 /* Resources */,
-				D74027633076CECC090FA9BF /* [CP] Embed Pods Frameworks */,
+				FDF3CA2AEE59584214E08ED2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -279,7 +341,6 @@
 			files = (
 				3201AB7827B3CC2900ACEF65 /* LaunchScreen.storyboard in Resources */,
 				3201AB7527B3CC2900ACEF65 /* Assets.xcassets in Resources */,
-				3201AB7327B3CC2700ACEF65 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,7 +361,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5143E48628F82B729F4A2547 /* [CP] Check Pods Manifest.lock */ = {
+		50137C5B503134AB7F39B8FD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -322,24 +383,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		67D0E1AA3C12643F303FA63D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-lagos-github-users/Pods-lagos-github-users-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-lagos-github-users/Pods-lagos-github-users-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-lagos-github-users/Pods-lagos-github-users-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		68367ABBFA4C1B06F96991E2 /* [CP] Check Pods Manifest.lock */ = {
+		5A02E3ACD8A2A60C748458FE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -361,7 +405,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D3AEDA84093670FD51FC2318 /* [CP] Check Pods Manifest.lock */ = {
+		CB8E4424EA8D7B5123C95CF6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -383,7 +427,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D74027633076CECC090FA9BF /* [CP] Embed Pods Frameworks */ = {
+		D822FC603FEB0F3F7B103232 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-lagos-github-users/Pods-lagos-github-users-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-lagos-github-users/Pods-lagos-github-users-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-lagos-github-users/Pods-lagos-github-users-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDF3CA2AEE59584214E08ED2 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -407,9 +468,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3201AB7027B3CC2700ACEF65 /* ViewController.swift in Sources */,
+				32F0F4FE27B4D88D00C29824 /* DataHelper.swift in Sources */,
+				32F0F4FC27B4C66100C29824 /* UserRecord.swift in Sources */,
+				321BC30527B3DF9000740932 /* Responses.swift in Sources */,
 				3201AB6C27B3CC2700ACEF65 /* AppDelegate.swift in Sources */,
+				321BC30327B3DEB800740932 /* Requester.swift in Sources */,
 				3201AB6E27B3CC2700ACEF65 /* SceneDelegate.swift in Sources */,
+				321BC30927B3E5B900740932 /* UsersVC.swift in Sources */,
+				321BC30B27B3E60100740932 /* ProfileCell.swift in Sources */,
+				32F0F4FA27B4B9B100C29824 /* InfiniteScrollVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,14 +513,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3201AB7127B3CC2700ACEF65 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3201AB7227B3CC2700ACEF65 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3201AB7627B3CC2900ACEF65 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -523,6 +582,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -577,23 +637,25 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		3201AB9327B3CC2A00ACEF65 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CAC76925B1944E32E3C94F68 /* Pods-lagos-github-users.debug.xcconfig */;
+			baseConfigurationReference = 0355FE92998F5062626E599D /* Pods-lagos-github-users.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 43C8PVP2R5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "lagos-github-users/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = GitHub;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -605,23 +667,24 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		3201AB9427B3CC2A00ACEF65 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 819ADFC6524A699E4860C69B /* Pods-lagos-github-users.release.xcconfig */;
+			baseConfigurationReference = 4C80415FF39B57D0986D68A4 /* Pods-lagos-github-users.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 43C8PVP2R5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "lagos-github-users/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = GitHub;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -633,13 +696,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		3201AB9627B3CC2A00ACEF65 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C68C46137F1739DDDA653416 /* Pods-lagos-github-usersTests.debug.xcconfig */;
+			baseConfigurationReference = 70B4E1624876F001C4ECFC56 /* Pods-lagos-github-usersTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -659,7 +722,7 @@
 		};
 		3201AB9727B3CC2A00ACEF65 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2EC33322C6BFA4B580384579 /* Pods-lagos-github-usersTests.release.xcconfig */;
+			baseConfigurationReference = 558355F28B35940C60E2CC96 /* Pods-lagos-github-usersTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -679,7 +742,7 @@
 		};
 		3201AB9927B3CC2A00ACEF65 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BB30704DA76A89769745F418 /* Pods-lagos-github-users-lagos-github-usersUITests.debug.xcconfig */;
+			baseConfigurationReference = 659528E0C18A16ACA065B067 /* Pods-lagos-github-users-lagos-github-usersUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -697,7 +760,7 @@
 		};
 		3201AB9A27B3CC2A00ACEF65 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A004C580CFAEDF0E496E5D31 /* Pods-lagos-github-users-lagos-github-usersUITests.release.xcconfig */;
+			baseConfigurationReference = 985CB27D5A719308015D20B1 /* Pods-lagos-github-users-lagos-github-usersUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
