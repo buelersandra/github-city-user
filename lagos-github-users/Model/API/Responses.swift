@@ -26,7 +26,11 @@ struct User: Codable, Comparable {
     
 }
 
-struct GroupedUsers{
+struct GroupedUsers : Comparable{
     var alphabet:String?
     var users:[UserRecord]?
+    
+    static func < (lhs: GroupedUsers, rhs: GroupedUsers) -> Bool {
+        lhs.alphabet! < rhs.alphabet!
+    }
 }

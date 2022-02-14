@@ -16,7 +16,7 @@ class InfiniteScrollTableViewController:UITableViewController{
     open func fetchData(){}
    
     lazy var spinner: UIActivityIndicatorView = {
-        let spinner = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.medium)
+        let spinner = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.gray)
            spinner.hidesWhenStopped = true
            spinner.tag = 419
            return spinner
@@ -48,7 +48,7 @@ class InfiniteScrollTableViewController:UITableViewController{
     }
     
     
-   func stopLoading(){
+   func stopInfiniteLoading(){
        self.isLoadingPaginatedResults = false
        self.spinner.stopAnimating()
    }

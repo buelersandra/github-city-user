@@ -16,7 +16,7 @@ class UserRecord: Object {
     @Persisted var html_url: String?
     @Persisted var name:String?
     @Persisted var bio:String?
-    @Persisted var favorite = false
+    @Persisted var favorite:Bool = false
     
  
 }

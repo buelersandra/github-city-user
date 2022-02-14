@@ -27,6 +27,7 @@ class ProfileCell: UITableViewCell {
         view.isUserInteractionEnabled = true
         let gesturen = UITapGestureRecognizer(target: self, action: #selector(viewUser))
         view.addGestureRecognizer(gesturen)
+        view.image = UIImage(named: "default_image")
         return view
     }()
     
@@ -35,7 +36,7 @@ class ProfileCell: UITableViewCell {
         view.setImage( UIImage(named: "unfavorite"), for: .normal)
         view.translatesAutoresizingMaskIntoConstraints = false
         view.contentMode = .scaleAspectFit
-        view.target(forAction: #selector(tapFavorite), withSender: self)
+        view.addTarget(self, action: #selector(tapFavorite), for: .touchUpInside)
         return view
     }()
     
@@ -44,6 +45,7 @@ class ProfileCell: UITableViewCell {
         view.translatesAutoresizingMaskIntoConstraints = false
         view.numberOfLines = 1
         view.textAlignment = .left
+        
         return view
     }()
     
@@ -70,6 +72,7 @@ class ProfileCell: UITableViewCell {
         container.pinToRight(self.contentView,constant: -16)
         container.pinToTop(self.contentView,constant:16)
         container.pinToBottom(self.contentView,constant: -16)
+        container.setHeight(60)
         
         container.addSubview(profileName)
         container.addSubview(profileImage)
@@ -80,7 +83,7 @@ class ProfileCell: UITableViewCell {
         profileImage.setHeight(40)
         profileImage.setWidth(40)
         
-        profileName.leftAnchor.constraint(equalTo: profileImage.rightAnchor,constant: 8).isActive = true
+        profileName.leadingAnchor.constraint(equalTo: profileImage.trailingAnchor,constant: 8).isActive = true
         profileName.centerYAnchor.constraint(equalTo: profileImage.centerYAnchor).isActive = true
 
         profileName.pinToRight(container)
@@ -88,8 +91,10 @@ class ProfileCell: UITableViewCell {
         
         favImage.pinToRight(container)
         favImage.centerYAnchor.constraint(equalTo: container.centerYAnchor).isActive = true
-        profileImage.setHeight(40)
-        profileImage.setWidth(40)
+        favImage.setHeight(40)
+        favImage.setWidth(30)
+        
+        
     }
     
     
@@ -122,35 +127,10 @@ class ProfileCell: UITableViewCell {
     }
     
     func setDefaultImage(uimage:UIImage? = nil){
-        profileImage.image = uimage ?? UIImage(named: "default")
+        profileImage.image = uimage ?? UIImage(named: "default_image")
     }
     
 
 }
 
 
-extension UIView{
-    func pinToLeft(_ parentView:UIView,constant:CGFloat = 0){
-        self.leadingAnchor.constraint(equalTo: parentView.leadingAnchor, constant: constant).isActive = true
-    }
-    
-    func pinToRight(_ parentView:UIView,constant:CGFloat = 0){
-        self.trailingAnchor.constraint(equalTo: parentView.trailingAnchor, constant: constant).isActive = true
-    }
-    
-    func pinToBottom(_ parentView:UIView,constant:CGFloat = 0){
-        self.bottomAnchor.constraint(equalTo: parentView.bottomAnchor, constant: constant).isActive = true
-    }
-    
-    func pinToTop(_ parentView:UIView,constant:CGFloat = 0){
-        self.topAnchor.constraint(equalTo: parentView.topAnchor, constant: constant).isActive = true
-    }
-    
-    func setHeight(_ constant:CGFloat){
-        self.heightAnchor.constraint(equalToConstant: constant).isActive = true
-    }
-    
-    func setWidth(_ constant:CGFloat){
-        self.heightAnchor.constraint(equalToConstant: constant).isActive = true
-    }
-}
